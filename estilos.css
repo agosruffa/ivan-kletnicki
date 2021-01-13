@@ -3,10 +3,14 @@
 	padding: 0px;
 }
 
+html{ 
+  scroll-behavior: smooth;
+ }
+
 body { 
 	margin-bottom:0;
   padding: 0px 0 0 0;
-
+  width: 100%;
 }
 
 
@@ -19,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   width: 8%;
+  height:100%;
   background-color: white;
   position: fixed;
   overflow: auto;
@@ -27,11 +32,11 @@ body {
 
 li a {
   display: block;
-  padding: 26px 48px;
+  height: cover;
+  padding: 16px 48px;
   text-decoration: none;
   line-height: 1em;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 0.1em;
   color: #333333;
   transition: all ease-out 300ms;
@@ -54,6 +59,11 @@ li {
     margin: 2em 0;
 }
 
+
+nav li a:hover{
+  color: #006dff;
+  text-decoration: none;
+}
 
 
 /*---perfil--- */
@@ -111,11 +121,11 @@ li a i {
      font-size: 1.5rem!important;
 }
 
-.btncv {
-    font-size: 5rem;
+
+button a:hover {
+  color: white;
+  text-decoration: none;
 }
-
-
 
 /*--frase--*/ 
 .main-top {
@@ -255,12 +265,40 @@ h3.headline {
 .detalle {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 28px;
     color: #006DFF;
     font-weight: bold;
-    line-height: 49px;
+    line-height: 39px;
 }
 
+.tituloidiomas{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: white;
+  border: 0.5px solid gray;
+}
+
+#myBar1 {
+  width: 90%;
+  height: 30px;
+  background-color: #006dff;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+#myBar2 {
+  width: 70%;
+  height: 30px;
+  background-color: #006dff;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
 
 /* ---imagenes del portfolio--- */ 
 
@@ -324,6 +362,22 @@ h3.headline {
   top: 38%;
 }
 }
+
+
+
+
+
+
+/*--portfolio nuevo--*/
+
+
+.mySlides {display:none}
+
+
+
+
+
+
 /*-----FIN DE IMAGNES PORTFOLIO------- */
 
 
@@ -334,8 +388,8 @@ footer {
   background-color: LightGray;
 }
 
-.btn-sm {
-  background-color: #006dff;
+.btn-xs {
+     font-size: 1rem!important;
 }
 
 h6.formulario {
@@ -406,6 +460,11 @@ ul.letras-costado{
 	color:#006DFF!important;
 }
 
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link:hover{
+  color:#006DFF!important;
+}
+
+
 nav.sticky-top {
 	position:fixed;
 	width:100%;
@@ -420,7 +479,8 @@ section {
 	margin-left: 0px!important;
 	padding: 10px 10px 0px 10px!important;
 }
-#home {
+
+.presentacionnoresponsive {
 	display: none;
 }
 
@@ -443,6 +503,7 @@ div.desktop-presentation {
      font-size: 1rem!important;
      width: 100%;
 }
+
 .main-top {
     margin-top: 50px;
 }
@@ -483,101 +544,5 @@ div.mobile-presentation{
 }
 
 
+/*portfolio modal */ 
 
-
-/*
-.sidebar {
-  position: fixed;
-  width: 25%;
-  height: 100vh;
-  font-size: 0.65em;
-}
-
-.nav {
-  position: absolute; /*o relative era
-  margin: 0 5%;
-  text-align: left;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-}
-/*
-.nav ul {
-  list-style: none;
-
-  }
-
-li {
-    position: relative;
-    margin: 2em 0;
-}
-
-li a {
-    line-height: 5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.4em;
-    color: #333333;
-    display: block;
-    transition: all ease-out 300ms;
-}
-  
-.active a {
-      color: #006DFF;
-    }
-    
-&:not(.active)::after {
-      opacity: 0.2;
-    }
-    
-&:not(.active)
-
-:hover a {
-      color: rgba(#FFF, 0.75);
-}
-    
-&::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 0.2em;
-      background: black;
-      left: 0;
-      bottom: 0;
-      background-image: linear-gradient(to right, #5e42a6, #b74e91)
-    }
-  }
-}
-
-.twitter {
-  position: relative;
-  width: 75%;
-  float: right;
-  height: 100vh;
-  }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-  
-a {
-    position: relative;
-}
-
-img {
-      width: 48px;
-      height: 48px;
-}
-
-p {
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    color: #FFF;
-    font-weight: bold;
-    margin-top: 20px;
-}

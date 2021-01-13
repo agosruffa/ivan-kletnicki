@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IVAN KLETNICKI</title>
-	<link rel="stylesheet" href="estilos.css">
 	<meta name="keywords" content="community manager, diseño, diseñador, multimedia, crear, innovar, diseño grafico, diseño web, photoshop, illustrator, premiere, wordpress">
 	<meta name="description" content="Conocé el trabajo de Ivan Kletnicki.">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="estilos.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<script src="js/main.js"></script>
 </head>
 <body style="height:1500px">
 
@@ -26,9 +28,9 @@
 </nav>
 </section> 
 
-<section class=""> <!--menu para cel --> 
+<section class="" id="home2"> <!--menu para cel --> 
 <nav class="navbar navbar-expand-md bg-white navbar-light sticky-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="home2">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand text-blue-300" href="https://www.behance.net/ivanklet">
@@ -37,7 +39,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="active nav-link" href="#home">Perfil</a>
+        <a class="active nav-link" href="#home2">Perfil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#educacion">Educación</a>
@@ -54,7 +56,7 @@
 </section>
 
 <section style="margin-left:12%;padding:1px 10px;" id="home"> 
-	<div class="container-fluid mt-5 p-5">
+	<div class="container-fluid mt-5 p-5 presentacionnoresponsive" >
   		<div class="row">
     		<div class="trabajo col-lg-9 col-sm-11 mt-3">Community Manager / Diseñador Multimedia 
     		</div>
@@ -90,7 +92,7 @@
 
 <!--imagen principal para mobile -->
 <section>
-  <div class="container mobile-presentation">
+  <div class="container mobile-presentation" >
     <div class="row">
       <div class="col-lg-6 col-sm-12">
         <img id="imgprincipal" src="media/personales/ivan-3.jpg" alt="">
@@ -103,7 +105,7 @@
         </div>
         <div class="descripcion mt-3">Hola!, soy Iván. Me gusta crear cosas desde cero y generar excelentes resultados en cada proyecto!. También crear fuertes conexiones entre personas y brindar experiencias únicas. Liderar o ser parte de un equipo me motiva mucho. Los invito a conocerme un poco más!
         </div>
-        <button type="button" class="mt-4 btn btn-sm btn-outline-primary btncv"> <a href="media/personales/cv-profesional.pdf" target="_blank" title="">Ver Resumen</button> </a>
+        <button type="button" class="mt-4 btn btn-sm btn-outline-primary"> <a href="media/personales/cv-profesional.pdf" target="_blank" title="">Ver Resumen</button> </a>
       </div>
       
     </div>
@@ -139,7 +141,7 @@
         <p>Gestión y manejo de redes sociales de una empresa y/o persona. Tengo como objetivo generar una comunidad. Realizo campañas, monitoreo, contenido digital y más!. </p>
       </div>
       <div class="col-md-4 col-sm-12 p-4">
-        <h2 class="headline branding">BRANDING</h2><br>
+        <h2 class="headline branding"><br>BRANDING</h2>
         <hr/>
         <p>Me enfoco en crear o darle forma a una marca con una solida estrategia de branding e identidad corporativa, para achicar la brecha entre la empresa y las personas.</p>
       </div>
@@ -162,30 +164,42 @@
         <h3 class="headline text-white">EDUCACIÓN</h3>
         <br>
         <img class="mb-5"  src="https://img.icons8.com/ios/50/ffffff/long-arrow-down.png"/>
-        <p class="fecha mt-5">2014-2016</p>
-        <p class="curso">Diseño Multimedia</p>
-        <p class="lugar">Escuela Da Vinci</p>
-        <br>
-        <br>
         <p class="fecha mt-5">2020</p>
         <p class="curso">Community management y Marketing digital</p>
         <p class="lugar">Coderhouse</p>
+    
+        <p class="fecha mt-5">2014-2016</p>
+        <p class="curso">Diseño Multimedia</p>
+        <p class="lugar">Escuela Da Vinci</p>
       </div>
       <div class="col-md-4 col-sm-12 p-5 bg-primary text-white cuadroazul-mobile">
         <h3 class="headline text-white">ENSEÑANZA</h3>
         <br>
       	<img class="mb-5"  src="https://img.icons8.com/ios/50/ffffff/long-arrow-down.png"/>
+        <p class="fecha mt-5">2019</p>
+        <p class="curso">Wordpress<br></p><br>
+        <p class="lugar">Instituto Bass</p>
+      
         <p class="fecha mt-5">2018</p>
         <p class="curso">Post - producción audiovisual: Adobe Premiere</p>
         <p class="lugar">Instituto Bass</p>
-        <br>
-        <p class="fecha mt-1">2019</p>
-        <p class="curso">Wordpress</p>
-        <p class="lugar">Instituto Bass</p>  
+          
       </div>
       <div class="col-md-4 col-sm-12 p-5">
         <h1 class="headline mb-5">Skills</h1>
-        <p class="detalle">Adobe photoshop / Illustrator / Premiere / After Effects / Storytelling / Wordpress / Edición fotográfica</p>
+        <p class="detalle">Adobe photoshop / Illustrator / Premiere /After Effects / Storytelling / Wordpress / Edición fotográfica</p>
+        <h1 class="headline mt-5">Idiomas</h1>
+        <p class="detalle mt-4">Inglés</p>
+        <p class="tituloidiomas"> Oral </p>
+        <div id="myProgress">
+          <div id="myBar1"></div>
+        </div>
+        <br>
+        <p class="tituloidiomas"> Escrito </p>
+        <div id="myProgress">
+          <div id="myBar2"></div>
+        </div>
+
       </div>
     </div>
 
@@ -199,12 +213,386 @@
           <div class="col-12">
             <a name="portfolio" id="portfolio-ivan"></a>
             <h3 class="subtitulo pb-2 mt-4 mb-3">Portfolio</h3>
-        <!--    <p class="col-lg-6 col-sm-12 mb-5 pl-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos dolores facere, quae blanditiis. Quisquam reiciendis, quam ipsam magnam. Natus dolore optio impedit a ratione aperiam dolorum placeat similique reprehenderit.</p>-->
           </div>
+
+
+  <!--
 
 <div class="container-fluid">
   <div class="row"> 
+ 
+  <div class="w3-container">
   
+  <div class="col-md-4 col-6 pb-5 producteffect">
+    <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
+    <div class="middle">
+      <div class="text">
+      	<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Logos</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      
+<div class="w3-row w3-grey">
+      <div class="w3-container w3-grey w3-col m8 l9">
+        <div class="w3-content w3-display-container">
+<style>
+.mySlides {display:none;}
+</style>
+
+  <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
+  <img class="mySlides" src="media/productos/presentaciones/4.jpg" style="width:100%">
+  <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
+  <img class="mySlides" src="media/productos/presentaciones/4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+      </div>
+     <header class="w3-container w3-grey w3-col m4 l3"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 class="w3-text-white">Logos</h2>
+  <p class="w3-text-white">Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto
+solicitado.</p>
+      </header>
+    </div>
+  </div>
+</div>
+
+</div>
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+  <div class="col-md-4 col-6 pb-5 producteffect">
+    <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
+    <div class="middle">
+      <div class="text">TRABAJO 5</div>
+    </div>
+  </div>
+
+-->
+
+<!-- primera linea -->
+
+<div class="w3-container">
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/logos/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/logos/2.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/logos/3.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
+  </div>
+</div>
+
+<div id="myModal" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s9">
+   <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
+   <img class="mySlides" src="media/productos/logos/2.jpg" style="width:100%">
+   <img class="mySlides" src="media/productos/logos/3.jpg" style="width:100%">
+</div>
+<div class="w3-col s3">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>LOGOS</h2>
+   <h6>Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+<!-- segunda linea--> 
+
+<div class="w3-container">
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/6.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/7.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/8.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
+  </div>
+</div>
+
+<div id="myModal2" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s9">
+   <img class="mySlides2" src="media/productos/retoques/6.jpg" style="width:100%">
+   <img class="mySlides2" src="media/productos/retoques/7.jpg" style="width:100%">
+   <img class="mySlides2" src="media/productos/retoques/8.jpg" style="width:100%">
+</div>
+<div class="w3-col s3">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>RETOQUES FOTOGRÁFICOS</h2>
+   <h6>Edición, recorte, retoque, tratamiento de imágenes de material fotográfico e/o ilustraciones. Para destacar un producto o sección de la misma foto, o un detalle. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/6.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/7.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/8.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal2').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal2').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+
+<!-- tercera linea--> 
+
+<div class="w3-container">
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/6.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/7.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect">
+    <img src="media/productos/retoques/8.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
+  </div>
+</div>
+
+<div id="myModal" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s9">
+   <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
+   <img class="mySlides" src="media/productos/logos/2.jpg" style="width:100%">
+   <img class="mySlides" src="media/productos/logos/3.jpg" style="width:100%">
+</div>
+<div class="w3-col s3">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>LOGOS</h2>
+   <h6>Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------
+
+
+<div class="container-fluid">
+  <div class="row"> 
   <div class="col-md-4 col-6 pb-5 producteffect">
     <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
     <div class="middle">
@@ -313,7 +701,7 @@
       </span>
     </div>
 <div class="col-lg-6 col-sm-12 mt-4">
-	<h6 class="formulario">Dejame tu consulta</h6>
+	<h6 class="formulario">¡Escribime y me pondré en contacto pronto!</h6>
       <form action="/action_page.php">
       	<div class="form-group">
           <input type="text" class="form-control" id="usr" placeholder="Nombre">
@@ -324,7 +712,7 @@
         <div class="form-group">
           <textarea class="form-control" rows="5" id="comment" placeholder="Consulta"></textarea>
         </div>
-        <button type="submit" class="btn-sm">Enviar</button>
+        <button type="submit" class="btn btn-xs btn-outline-primary">Enviar</button>
       </form>
     </div>
   </div>
@@ -333,6 +721,7 @@
   </section>
 
 
+</script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
