@@ -309,15 +309,15 @@ function showDivs(n) {
 
 <div class="w3-row-padding" style="margin:0 -16px">
   
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/logos/1.jpg" style="width:100%;cursor:pointer"
     onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/logos/2.jpg" style="width:100%;cursor:pointer"
     onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/logos/3.jpg" style="width:100%;cursor:pointer"
     onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
   </div>
@@ -328,12 +328,12 @@ function showDivs(n) {
  <div class="w3-modal-content">
 
 <div class="w3-content" style="max-width:80%">
- <div class="w3-col s9">
+ <div class="w3-col s8">
    <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
    <img class="mySlides" src="media/productos/logos/2.jpg" style="width:100%">
    <img class="mySlides" src="media/productos/logos/3.jpg" style="width:100%">
 </div>
-<div class="w3-col s3">
+<div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
    <h2>LOGOS</h2>
    <h6>Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
@@ -349,13 +349,13 @@ function showDivs(n) {
     </div>
 
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:90%" onclick="currentDiv(1)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:90%" onclick="currentDiv(2)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:90%" onclick="currentDiv(3)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -364,80 +364,38 @@ function showDivs(n) {
 </div> <!-- End modal -->
 
 </div>
-
-</div>
-
-<script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-</script>
-
+<br>
 <!-- segunda linea--> 
 
 <div class="w3-container">
 
 <div class="w3-row-padding" style="margin:0 -16px">
   
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/retoques/6.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
+    onclick="openModal2();currentDiv2(1)" class=" w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/retoques/7.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
+    onclick="openModal2();currentDiv2(2)" class="w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
+  <div class="w3-col s4 producteffect text p-2">
     <img src="media/productos/retoques/8.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
+    onclick="openModal2();currentDiv2(3)" class="w3-hover-shadow image">
   </div>
 </div>
 
 <div id="myModal2" class="w3-modal w3-black">
- <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal2()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
 <div class="w3-content" style="max-width:80%">
- <div class="w3-col s9">
+ <div class="w3-col s8">
    <img class="mySlides2" src="media/productos/retoques/6.jpg" style="width:100%">
    <img class="mySlides2" src="media/productos/retoques/7.jpg" style="width:100%">
    <img class="mySlides2" src="media/productos/retoques/8.jpg" style="width:100%">
 </div>
-<div class="w3-col s3">
+<div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
    <h2>RETOQUES FOTOGRÁFICOS</h2>
    <h6>Edición, recorte, retoque, tratamiento de imágenes de material fotográfico e/o ilustraciones. Para destacar un producto o sección de la misma foto, o un detalle. </h6>
@@ -447,19 +405,19 @@ function showDivs(n) {
    <div class="w3-row w3-center">
 
     <div class="w3-display-container">
-     <p id="caption"></p>
-     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+     <p id="caption2"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs2(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs2(1)">❯</span>
     </div>
 
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/6.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/6.jpg" style="width:90%" onclick="currentDiv2(1)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/7.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/7.jpg" style="width:90%" onclick="currentDiv2(2)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/8.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/8.jpg" style="width:90%" onclick="currentDiv2(3)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -468,101 +426,60 @@ function showDivs(n) {
 </div> <!-- End modal -->
 
 </div>
-
-<script>
-function openModal() {
-  document.getElementById('myModal2').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal2').style.display = "none";
-}
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-</script>
-
-
+<br>
 <!-- tercera linea--> 
 
 <div class="w3-container">
 
 <div class="w3-row-padding" style="margin:0 -16px">
   
-  <div class="w3-col s4 producteffect">
-    <img src="media/productos/retoques/6.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/web/11.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal3();currentDiv3(1)" class=" w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
-    <img src="media/productos/retoques/7.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(2)" class="w3-hover-shadow image">
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/web/12.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal3();currentDiv3(2)" class="w3-hover-shadow image">
   </div>
-  <div class="w3-col s4 producteffect">
-    <img src="media/productos/retoques/8.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal();currentDiv(3)" class="w3-hover-shadow image">
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/web/13.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal3();currentDiv3(3)" class="w3-hover-shadow image">
   </div>
 </div>
 
-<div id="myModal" class="w3-modal w3-black">
- <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+<div id="myModal3" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal3()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
 <div class="w3-content" style="max-width:80%">
- <div class="w3-col s9">
-   <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
-   <img class="mySlides" src="media/productos/logos/2.jpg" style="width:100%">
-   <img class="mySlides" src="media/productos/logos/3.jpg" style="width:100%">
+ <div class="w3-col s8">
+   <img class="mySlides3" src="media/productos/web/11.jpg" style="width:100%">
+   <img class="mySlides3" src="media/productos/web/12.jpg" style="width:100%">
+   <img class="mySlides3" src="media/productos/web/13.jpg" style="width:100%">
 </div>
-<div class="w3-col s3">
+<div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
-   <h2>LOGOS</h2>
-   <h6>Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
+   <h2>CONTENIDO WEB</h2>
+   <h6>Material audiovisual y visual para sitios o anuncios promocionales en la web. Ajustado a sus formatos y detalles a resaltar. Carrousel, Banners, Relees, Videos, Ilustraciones, etc. </h6>
   </aside>
 </div>
 
    <div class="w3-row w3-center">
 
     <div class="w3-display-container">
-     <p id="caption"></p>
-     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+     <p id="caption3"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs3(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs3(1)">❯</span>
     </div>
 
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:100%" onclick="currentDiv(1)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/11.jpg" style="width:90%" onclick="currentDiv3(1)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:100%" onclick="currentDiv(2)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/12.jpg" style="width:90%" onclick="currentDiv3(2)" alt="">
     </div>
     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:100%" onclick="currentDiv(3)" alt="">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/13.jpg" style="width:90%" onclick="currentDiv3(3)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -572,115 +489,195 @@ function showDivs(n) {
 
 </div>
 
+<br>
+<!--cuarta linea --> 
+<div class="w3-container">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-----------------------
-
-
-<div class="container-fluid">
-  <div class="row"> 
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 5</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/logos/2.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/logos/3.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
- <br>
- <br>
- <br>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/presentaciones/4.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/presentaciones/5.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/retoques/6.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/retoques/7.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/retoques/8.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/tarjetas/9.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
+<div class="w3-row-padding" style="margin:0 -16px">
   
-
-          <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/tarjetas/10.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/branding/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal4();currentDiv4(1)" class=" w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/branding/2.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal4();currentDiv4(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/branding/3.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal4();currentDiv4(3)" class="w3-hover-shadow image">
   </div>
 
-   <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/web/11.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
-    </div>
-  </div>
 
-   <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href=""><img class="image" src="media/productos/web/12.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 1</div>
+</div>
+
+<div id="myModal4" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal4()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s8">
+   <img class="mySlides4" src="media/productos/branding/1.jpg" style="width:100%">
+   <img class="mySlides4" src="media/productos/branding/2.jpg" style="width:100%">
+   <img class="mySlides4" src="media/productos/branding/3.jpg" style="width:100%">
+</div>
+<div class="w3-col s4">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>BRANDING</h2>
+   <h6>Manual de identidad, Cartelera de teatro, Menú gastrónomico, son algunos de los proyectos donde se resaltan la estrategia e identidad visual de la marca. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption4"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs4(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs4(1)">❯</span>
     </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/branding/1.jpg" style="width:90%" onclick="currentDiv4(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/branding/2.jpg" style="width:90%" onclick="currentDiv4(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/branding/3.jpg" style="width:90%" onclick="currentDiv4(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
+<!--quinta linea --> 
+<div class="w3-container">
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/redes/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal5();currentDiv5(1)" class=" w3-hover-shadow image">
   </div>
-     </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/redes/2.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal5();currentDiv5(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/redes/3.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal5();currentDiv5(3)" class="w3-hover-shadow image">
+  </div>
+</div>
+
+<div id="myModal5" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal5()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s8">
+   <img class="mySlides5" src="media/productos/redes/1.jpg" style="width:100%">
+   <img class="mySlides5" src="media/productos/redes/2.jpg" style="width:100%">
+   <img class="mySlides5" src="media/productos/redes/3.jpg" style="width:100%">
+</div>
+<div class="w3-col s4">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>SOCIAL MEDIA CONTENT</h2>
+   <h6>Contenido exclusivamente realizado para los diferentes canales de redes sociales. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption5"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs5(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs5(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/1.jpg" style="width:90%" onclick="currentDiv5(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/2.jpg" style="width:90%" onclick="currentDiv5(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/3.jpg" style="width:90%" onclick="currentDiv5(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
+
+<!--sexta linea --> 
+<div class="w3-container">
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/art/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal6();currentDiv6(1)" class=" w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/art/2.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal6();currentDiv6(2)" class="w3-hover-shadow image">
+  </div>
+  <div class="w3-col s4 producteffect text p-2">
+    <img src="media/productos/art/3.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal6();currentDiv6(3)" class="w3-hover-shadow image">
+  </div>
+</div>
+
+<div id="myModal6" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal6()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:80%">
+ <div class="w3-col s8">
+   <img class="mySlides6" src="media/productos/art/1.jpg" style="width:100%">
+   <img class="mySlides6" src="media/productos/art/2.jpg" style="width:100%">
+   <img class="mySlides6" src="media/productos/art/3.jpg" style="width:100%">
+</div>
+<div class="w3-col s4">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>ART</h2>
+   <h6>Diferentes piezas de arte con contenido estético visual y un mensaje a transmitir. Composiciones, fotomontajes, piezas individuales, etc.  </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption6"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs6(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs6(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/1.jpg" style="width:90%" onclick="currentDiv6(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/2.jpg" style="width:90%" onclick="currentDiv6(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/3.jpg" style="width:90%" onclick="currentDiv6(3)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
+
+
         </div><!-- /.row -->
      
         </div><!-- /.row --><!-- Products Section -->

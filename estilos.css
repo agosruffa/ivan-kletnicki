@@ -79,7 +79,7 @@ nav li a:hover{
  }
 
 
-li a i {
+a i {
     color: #006DFF;
 }
 
@@ -303,7 +303,7 @@ h3.headline {
 /* ---imagenes del portfolio--- */ 
 
 .image {
-  opacity: 0.3;
+  opacity: 0.1;
   display: block;
   width: 100%;
   height: auto;
@@ -311,31 +311,34 @@ h3.headline {
   backface-visibility: hidden;
 }
 
-.middle {
+middle {
   transition: .5s ease;
   opacity: 1;
   position: absolute;
   top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 .producteffect:hover .image {
   opacity: 1;
   transform: scale(1.05);
-  -ms-transform: scale(1.05)
+  -ms-transform: scale(1.05);
 }
 
 .producteffect:hover .middle {
   opacity: 0;
 }
 
-.text {
+.text { /*cuadrado-azul*/
   background-color: rgba(0,109,255,0.8);
+} 
+
+text1 {
   color: white;
   font-size: 24px;
-  padding: 138px 125px;
+  padding: 8px 5px;
 }
 
 
@@ -361,8 +364,16 @@ h3.headline {
 .middle {
   top: 38%;
 }
-}
 
+.w3-container h2, .w3-container h6{
+  font-size: 10px!important;
+} 
+
+.w3-modal{
+  margin-top: 50px;
+}
+}
+  
 
 
 
