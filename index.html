@@ -17,16 +17,33 @@
 </head>
 <body style="height:1500px">
 
+
 <section>
-<nav>
+<nav id="myDIV" >
 <ul class="letras-costado">
-  <li><a class="active" href="#home">Perfil</a></li>
-  <li><a href="#educacion">Educación</a></li>
-  <li><a href="#portfolio">Portfolio</a></li>
-  <li><a href="#contacto">Contacto</a></li>
+  <li><a class="menuactivo active" href="#home">Perfil</a></li>
+  <li><a class="menuactivo" href="#educacion">Educación</a></li>
+  <li><a class="menuactivo" href="#portfolio">Portfolio</a></li>
+  <li><a class="menuactivo" href="#contacto">Contacto</a></li>
 </ul>
 </nav>
 </section> 
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("menuactivo");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+
+
 
 <section class="" id="home2"> <!--menu para cel --> 
 <nav class="navbar navbar-expand-md bg-white navbar-light sticky-top">
@@ -39,7 +56,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="active nav-link" href="#home2">Perfil</a>
+        <a class="nav-link" href="#home2">Perfil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#educacion">Educación</a>

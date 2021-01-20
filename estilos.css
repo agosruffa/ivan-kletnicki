@@ -45,9 +45,15 @@ li a {
   font-weight: bold;
 }
 
-li a.active  {
+
+li a .active {
+  color: #006DFF;
+}
+
+.active  {
   color: #006DFF;
 } 
+
 
 .letras-costado li a {
   writing-mode: vertical-lr;
@@ -529,7 +535,8 @@ p {
 }
 
 .branding {
-	margin-bottom: -20px;
+	
+  margin-top: -30px;
 }
 
 div.cuadroazul-mobile {
