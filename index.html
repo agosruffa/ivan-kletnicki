@@ -9,18 +9,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-  	<link rel="preconnect" href="https://fonts.gstatic.com">
-  	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-  	<link rel="stylesheet" href="estilos.css">
-  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  	<script src="js/main.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body style="height:1500px">
 
 
 <section style="max-height: 100%">
 <nav id="myDIV" >
-<ul class="letras-costado">
+<ul class="letras-costado" style="max-height: 100%">
   <li><a class="menuactivo active" href="#home">Perfil</a></li>
   <li><a class="menuactivo" href="#educacion">Educación</a></li>
   <li><a class="menuactivo" href="#portfolio">Portfolio</a></li>
@@ -71,6 +72,20 @@ for (var i = 0; i < btns.length; i++) {
   </div>  
 </nav>
 </section>
+
+<script>
+
+$(document).ready(function(){
+  $("a").click(function(){
+    $("#collapsibleNavbar").hide();
+  });
+  $("button").click(function(){
+    $("#collapsibleNavbar").show();
+  });
+});
+
+
+</script>
 
 <section style="margin-left:12%;padding:1px 10px;" id="home"> 
 	<div class="container mt-5 pb-5 presentacionnoresponsive" >
@@ -327,38 +342,86 @@ function showDivs(n) {
 
 <div class="w3-row-padding" style="margin:0 -16px">
   
-  <div class="w3-col s4 producteffect text p-3">
+  <div class="w3-col l4 s6 producteffect text p-3">
     <div class="nuevoestilo">
     <img src="media/productos/logos/1.jpg" style="width:100%;cursor:pointer"
     onclick="openModal();currentDiv(1)" class=" w3-hover-shadow image">
     <h3 class="categoria">Logos</h3>
+    </div>
   </div>
-  </div>
-  <div class="w3-col s4 producteffect text p-3">
+  <div class="w3-col l4 s6 producteffect text p-3">
      <div class="nuevoestilo">
     <img src="media/productos/retoques/6.jpg" style="width:100%;cursor:pointer"
     onclick="openModal2();currentDiv2(1)" class=" w3-hover-shadow image">
-    <h3 class="categoria">Retoques fotográficos</h3>
+    <h3 class="categoria">Retoques Fotográficos</h3>
     </div>
   </div>
-  <div class="w3-col s4 producteffect text p-3">
+  <div class="w3-col l4 s6 producteffect text p-3">
     <div class="nuevoestilo">
     <img src="media/productos/web/11.jpg" style="width:100%;cursor:pointer"
     onclick="openModal3();currentDiv3(1)" class=" w3-hover-shadow image">
-    <h3 class="categoria">Contenido Web</h3>
+    <h3 class="categoria">Contenido<br>Web</h3>
+    </div>
   </div>
+  <div class="w3-col l4 s6 producteffect text p-3">
+    <div class="nuevoestilo">
+    <img src="media/productos/branding/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal4();currentDiv4(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Branding</h3>
+   </div>
+  </div>
+<div class="w3-col l4 s6 producteffect text p-3">
+  <div class="nuevoestilo">
+    <img src="media/productos/redes/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal5();currentDiv5(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Social Media Content</h3>
+   </div>
+  </div>
+<div class="w3-col l4 s6 producteffect text p-3">
+  <div class="nuevoestilo">
+    <img src="media/productos/art/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal6();currentDiv6(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Art</h3>
+   </div>
+  </div> 
+  <!--cambiar todo de aqui --> 
+<div class="w3-col l4 s6 producteffect text p-3">
+    <div class="nuevoestilo">
+    <img src="media/productos/tarjetas/9.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal7();currentDiv7(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Tarjetas Personales</h3>
+   </div>
+  </div>
+<div class="w3-col l4 s6 producteffect text p-3">
+  <div class="nuevoestilo">
+    <img src="media/productos/presentaciones/4.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal8();currentDiv8(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Presentaciones</h3>
+   </div>
+  </div>
+<div class="w3-col l4 s6 producteffect text p-3">
+  <div class="nuevoestilo">
+    <img src="media/productos/publicidad/1.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal9();currentDiv9(1)" class=" w3-hover-shadow image">
+     <h3 class="categoria">Publicidad</h3>
+   </div>
   </div>
 </div>
+
+
+<!--modal--> 
 
 <div id="myModal" class="w3-modal w3-black">
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
-   <img class="mySlides" src="media/productos/logos/2.jpg" style="width:100%">
-   <img class="mySlides" src="media/productos/logos/3.jpg" style="width:100%">
+   <img class="mySlides" src="media/productos/logos/1.jpg" style="width:90%">
+   <img class="mySlides" src="media/productos/logos/2.jpg" style="width:90%">
+   <img class="mySlides" src="media/productos/logos/3.jpg" style="width:90%">
+   <img class="mySlides" src="media/productos/logos/4.jpg" style="width:90%">
+   <img class="mySlides" src="media/productos/logos/5.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
@@ -375,14 +438,20 @@ function showDivs(n) {
      <span class="w3-display-right w3-btn w3-black" onclick="plusDivs(1)">❯</span>
     </div>
 
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/1.jpg" style="width:90%" onclick="currentDiv(1)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/2.jpg" style="width:90%" onclick="currentDiv(2)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/3.jpg" style="width:90%" onclick="currentDiv(3)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/4.jpg" style="width:90%" onclick="currentDiv(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/logos/5.jpg" style="width:90%" onclick="currentDiv(5)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -398,38 +467,21 @@ function showDivs(n) {
 
 <div class="w3-row-padding" style="margin:0 -16px">
   
-  <div class="w3-col s4 producteffect text p-3">
-    <div class="nuevoestilo">
-    <img src="media/productos/branding/1.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal4();currentDiv4(1)" class=" w3-hover-shadow image">
-     <h3 class="categoria">Branding</h3>
-   </div>
-  </div>
-<div class="w3-col s4 producteffect text p-3">
-  <div class="nuevoestilo">
-    <img src="media/productos/redes/1.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal5();currentDiv5(1)" class=" w3-hover-shadow image">
-     <h3 class="categoria">Social Media Content</h3>
-   </div>
-  </div>
-<div class="w3-col s4 producteffect text p-3">
-  <div class="nuevoestilo">
-    <img src="media/productos/art/1.jpg" style="width:100%;cursor:pointer"
-    onclick="openModal6();currentDiv6(1)" class=" w3-hover-shadow image">
-     <h3 class="categoria">Art</h3>
-   </div>
-  </div>
+  
 </div>
 
 <div id="myModal2" class="w3-modal w3-black">
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal2()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides2" src="media/productos/retoques/6.jpg" style="width:100%">
-   <img class="mySlides2" src="media/productos/retoques/7.jpg" style="width:100%">
-   <img class="mySlides2" src="media/productos/retoques/8.jpg" style="width:100%">
+   <img class="mySlides2" src="media/productos/retoques/6.jpg" style="width:90%">
+   <img class="mySlides2" src="media/productos/retoques/7.jpg" style="width:90%">
+   <img class="mySlides2" src="media/productos/retoques/8.jpg" style="width:90%">
+   <img class="mySlides2" src="media/productos/retoques/9.jpg" style="width:90%">
+   <img class="mySlides2" src="media/productos/retoques/10.jpg" style="width:90%">
+   <img class="mySlides2" src="media/productos/retoques/11.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
@@ -446,14 +498,23 @@ function showDivs(n) {
      <span class="w3-display-right w3-btn w3-black"  onclick="plusDivs2(1)">❯</span>
     </div>
 
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/6.jpg" style="width:90%" onclick="currentDiv2(1)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/7.jpg" style="width:90%" onclick="currentDiv2(2)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/8.jpg" style="width:90%" onclick="currentDiv2(3)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/9.jpg" style="width:90%" onclick="currentDiv2(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/10.jpg" style="width:90%" onclick="currentDiv2(5)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/retoques/11.jpg" style="width:90%" onclick="currentDiv2(6)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -472,11 +533,13 @@ function showDivs(n) {
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal3()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides3" src="media/productos/web/11.jpg" style="width:100%">
-   <img class="mySlides3" src="media/productos/web/12.jpg" style="width:100%">
-   <img class="mySlides3" src="media/productos/web/13.jpg" style="width:100%">
+   <img class="mySlides3" src="media/productos/web/11.jpg" style="width:90%">
+   <img class="mySlides3" src="media/productos/web/12.jpg" style="width:90%">
+   <img class="mySlides3" src="media/productos/web/13.jpg" style="width:90%">
+   <img class="mySlides3" src="media/productos/web/14.jpg" style="width:90%">
+   <img class="mySlides3" src="media/productos/web/15.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
@@ -493,14 +556,20 @@ function showDivs(n) {
      <span class="w3-display-right w3-btn w3-black" onclick="plusDivs3(1)">❯</span>
     </div>
 
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/11.jpg" style="width:90%" onclick="currentDiv3(1)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/12.jpg" style="width:90%" onclick="currentDiv3(2)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/13.jpg" style="width:90%" onclick="currentDiv3(3)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/14.jpg" style="width:90%" onclick="currentDiv3(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/web/15.jpg" style="width:90%" onclick="currentDiv3(5)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -512,17 +581,19 @@ function showDivs(n) {
 
 <br>
 
+<!-- cuarta linea nueva --> 
 <div class="w3-container">
 
 <div id="myModal4" class="w3-modal w3-black">
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal4()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides4" src="media/productos/branding/1.jpg" style="width:100%">
-   <img class="mySlides4" src="media/productos/branding/2.jpg" style="width:100%">
-   <img class="mySlides4" src="media/productos/branding/3.jpg" style="width:100%">
+   <img class="mySlides4" src="media/productos/branding/1.jpg" style="width:90%">
+   <img class="mySlides4" src="media/productos/branding/2.jpg" style="width:90%">
+   <img class="mySlides4" src="media/productos/branding/3.jpg" style="width:90%">
+   <img class="mySlides4" src="media/productos/branding/4.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
@@ -548,6 +619,9 @@ function showDivs(n) {
     <div class="w3-col s3">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/branding/3.jpg" style="width:90%" onclick="currentDiv4(3)" alt="">
     </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/branding/4.jpg" style="width:90%" onclick="currentDiv4(4)" alt="">
+    </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
   
@@ -556,17 +630,20 @@ function showDivs(n) {
 
 </div>
 <br>
-
+<!-- quinta linea nueva --> 
 <div class="w3-container">
 <div id="myModal5" class="w3-modal w3-black">
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal5()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides5" src="media/productos/redes/1.jpg" style="width:100%">
-   <img class="mySlides5" src="media/productos/redes/2.jpg" style="width:100%">
-   <img class="mySlides5" src="media/productos/redes/3.jpg" style="width:100%">
+   <img class="mySlides5" src="media/productos/redes/1.jpg" style="width:90%">
+   <img class="mySlides5" src="media/productos/redes/2.jpg" style="width:90%">
+   <img class="mySlides5" src="media/productos/redes/3.jpg" style="width:90%">
+   <img class="mySlides5" src="media/productos/redes/4.jpg" style="width:90%">
+   <img class="mySlides5" src="media/productos/redes/5.jpg" style="width:90%">
+   <img class="mySlides5" src="media/productos/redes/6.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
 <aside class="w3-container w3-black w3-right"> 
@@ -583,14 +660,23 @@ function showDivs(n) {
      <span class="w3-display-right w3-btn w3-black" onclick="plusDivs5(1)">❯</span>
     </div>
 
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/1.jpg" style="width:90%" onclick="currentDiv5(1)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/2.jpg" style="width:90%" onclick="currentDiv5(2)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/3.jpg" style="width:90%" onclick="currentDiv5(3)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/4.jpg" style="width:90%" onclick="currentDiv5(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/5.jpg" style="width:90%" onclick="currentDiv5(5)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/redes/6.jpg" style="width:90%" onclick="currentDiv5(6)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -600,25 +686,26 @@ function showDivs(n) {
 
 </div>
 <br>
-
+<!-- sexta linea nueva --> 
 <div class="w3-container">
 <div id="myModal6" class="w3-modal w3-black">
  <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal6()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
 
-<div class="w3-content" style="max-width:80%">
+<div class="w3-content" style="max-width:90%">
  <div class="w3-col s8">
-   <img class="mySlides6" src="media/productos/art/1.jpg" style="width:100%">
-   <img class="mySlides6" src="media/productos/art/2.jpg" style="width:100%">
-   <img class="mySlides6" src="media/productos/art/3.jpg" style="width:100%">
-   <img class="mySlides6" src="media/productos/art/3.jpg" style="width:100%">
+   <img class="mySlides6" src="media/productos/art/1.jpg" style="width:90%">
+   <img class="mySlides6" src="media/productos/art/2.jpg" style="width:90%">
+   <img class="mySlides6" src="media/productos/art/3.jpg" style="width:90%">
+   <img class="mySlides6" src="media/productos/art/4.jpg" style="width:90%">
+   <img class="mySlides6" src="media/productos/art/5.jpg" style="width:90%">
 </div>
-<div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>ART</h2>
-   <h6>Diferentes piezas de arte con contenido estético visual y un mensaje a transmitir. Composiciones, fotomontajes, piezas individuales, etc.  </h6>
-  </aside>
-</div>
+  <div class="w3-col s4">
+    <aside class="w3-container w3-black w3-right"> 
+     <h2>ART</h2>
+      <h6>Diferentes piezas de arte con contenido estético visual y un mensaje a transmitir. Composiciones, fotomontajes, piezas individuales, etc.  </h6>
+    </aside>
+  </div>
 
    <div class="w3-row w3-center">
 
@@ -626,19 +713,22 @@ function showDivs(n) {
      <p id="caption6"></p>
      <span class="w3-display-left w3-btn w3-black" onclick="plusDivs6(-1)">❮</span>
      <span class="w3-display-right w3-btn w3-black" onclick="plusDivs6(1)">❯</span>
-    </div>
+  </div>
 
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/1.jpg" style="width:90%" onclick="currentDiv6(1)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/2.jpg" style="width:90%" onclick="currentDiv6(2)" alt="">
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
      <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/3.jpg" style="width:90%" onclick="currentDiv6(3)" alt="">
-   </div>
-     <div class="w3-col s3">
-     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/3.jpg" style="width:90%" onclick="currentDiv6(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/4.jpg" style="width:90%" onclick="currentDiv6(4)" alt="">
+    </div>
+    <div class="w3-col s2">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/art/5.jpg" style="width:90%" onclick="currentDiv6(5)" alt="">
     </div>
    </div> <!-- End row -->
   </div> <!-- End w3-content -->
@@ -649,6 +739,136 @@ function showDivs(n) {
 </div>
 <br>
 
+
+<!-- septima linea nueva --> 
+<div class="w3-container">
+<div id="myModal7" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal7()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:90%">
+ <div class="w3-col s8">
+   <img class="mySlides7" src="media/productos/tarjetas/9.jpg" style="width:90%">
+   <img class="mySlides7" src="media/productos/tarjetas/10.jpg" style="width:90%">
+</div>
+<div class="w3-col s4">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>TARJETAS PERSONALIZADAS</h2>
+   <h6>Diseños de tarjetas personales personalizadas. </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption7"></p>
+     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs7(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs7(1)">❯</span>
+    </div>
+
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/tarjetas/9.jpg" style="width:90%" onclick="currentDiv7(1)" alt="">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/tarjetas/10.jpg" style="width:90%" onclick="currentDiv7(2)" alt="">
+    </div>
+    
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
+
+<!-- octava linea nueva --> 
+
+<div class="w3-container">
+<div id="myModal8" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal8()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:90%">
+  <div class="w3-col s8" >
+   <img class="mySlides8" src="media/productos/presentaciones/4.jpg" style="width:90%">
+   <img class="mySlides8" src="media/productos/presentaciones/5.jpg" style="width:90%">
+  </div>
+  <div class="w3-col s4">
+    <aside class="w3-container w3-black w3-right"> 
+      <h2>PRESENTACIONES</h2>
+      <h6>Presentaciones de proyectos, documentos o ideas para empresas, marcas o emprendimientos.De manera concisa y sencilla con el objetivo de transmitirlas eficazmente.  </h6>
+    </aside>
+  </div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption8"></p>
+     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs8(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs8(1)">❯</span>
+    </div>
+
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/presentaciones/4.jpg" style="width:90%" onclick="currentDiv8(1)" alt="">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/presentaciones/5.jpg" style="width:90%" onclick="currentDiv8(2)" alt="">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
+
+<!-- novena linea nueva --> 
+<div class="w3-container">
+<div id="myModal9" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal9()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+<div class="w3-content" style="max-width:90%">
+ <div class="w3-col s8">
+   <img class="mySlides9" src="media/productos/publicidad/1.jpg" style="width:90%">
+   <img class="mySlides9" src="media/productos/publicidad/2.jpg" style="width:90%">
+   <img class="mySlides9" src="media/productos/publicidad/3.jpg" style="width:90%">
+</div>
+<div class="w3-col s4">
+<aside class="w3-container w3-black w3-right"> 
+   <h2>PUBLICIDAD</h2>
+   <h6>Afiches y cartelera impresa para la vía publica. También para interior uo exterior de negocio,para diferentes proyectos de empresas o marcas que requieren llegar a las personas de una manera visualmente directa.  </h6>
+  </aside>
+</div>
+
+   <div class="w3-row w3-center">
+
+    <div class="w3-display-container">
+     <p id="caption9"></p>
+     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs9(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs9(1)">❯</span>
+    </div>
+
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/publicidad/1.jpg" style="width:90%" onclick="currentDiv9(1)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/publicidad/2.jpg" style="width:90%" onclick="currentDiv9(2)" alt="">
+    </div>
+    <div class="w3-col s3">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="media/productos/publicidad/3.jpg" style="width:90%" onclick="currentDiv9(3)" alt="">
+   </div>
+
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+<br>
 
         </div><!-- /.row -->
      

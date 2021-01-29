@@ -337,7 +337,7 @@ h3.headline {
   width: 90%;
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-family: Montserrat; 
   font-weight: bold;
 }
@@ -357,7 +357,7 @@ h3.headline {
 }
 
 .categoria {
-  font-size: 12px;
+  font-size: 15px;
   top: 30%;
   width: 80%;
 }
