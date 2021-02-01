@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -110,7 +111,7 @@ $(document).ready(function(){
 			</div>
         <div class="descripcion mt-5">Hola!, soy Iván. Me gusta crear cosas desde cero y generar excelentes resultados en cada proyecto!. También crear fuertes conexiones entre personas y brindar experiencias únicas. Liderar o ser parte de un equipo me motiva mucho. Los invito a conocerme un poco más!
         </div>
-        <button type="button" class="mt-5 btn btn-outline-primary btncv"> <a href="media/personales/cv-profesional.pdf" target="_blank" title="">Ver Resumen</button> </a>
+        <button type="button" class="mt-4 btn btn-outline-primary btncv"> <a href="media/personales/cv-profesional.pdf" target="_blank" title="">Ver Resumen</button> </a>
       </div>
       <div class="col-lg-6 col-sm-12">
     	<img id="imgprincipal" src="media/personales/ivan-3.jpg" alt="">
@@ -219,7 +220,7 @@ $(document).ready(function(){
           
       </div>
       <div class="col-md-4 col-sm-12 p-5">
-        <h1 class="headline mb-5">Skills</h1>
+        <h1 class="headline mb-4">Skills</h1>
         <p class="detalle">Adobe photoshop / Illustrator / Premiere /After Effects / Storytelling / Wordpress / Edición fotográfica</p>
         <h1 class="headline mt-5">Idiomas</h1>
         <p class="detalle mt-4">Inglés</p>
@@ -248,93 +249,6 @@ $(document).ready(function(){
             <h3 class="subtitulo pb-2 mt-4 mb-3">Portfolio</h3>
           </div>
 
-
-  <!--
-
-<div class="container-fluid">
-  <div class="row"> 
- 
-  <div class="w3-container">
-  
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
-    <div class="middle">
-      <div class="text">
-      	<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Logos</button>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      
-<div class="w3-row w3-grey">
-      <div class="w3-container w3-grey w3-col m8 l9">
-        <div class="w3-content w3-display-container">
-<style>
-.mySlides {display:none;}
-</style>
-
-  <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
-  <img class="mySlides" src="media/productos/presentaciones/4.jpg" style="width:100%">
-  <img class="mySlides" src="media/productos/logos/1.jpg" style="width:100%">
-  <img class="mySlides" src="media/productos/presentaciones/4.jpg" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-      </div>
-     <header class="w3-container w3-grey w3-col m4 l3"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2 class="w3-text-white">Logos</h2>
-  <p class="w3-text-white">Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto
-solicitado.</p>
-      </header>
-    </div>
-  </div>
-</div>
-
-</div>
-<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style="width:100%">
-  </div>
-</div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-
-
-
-  <div class="col-md-4 col-6 pb-5 producteffect">
-    <a href="" id="art"><img class="image" src="media/productos/logos/1.jpg"></a>
-    <div class="middle">
-      <div class="text">TRABAJO 5</div>
-    </div>
-  </div>
-
--->
 
 <!-- primera linea -->
 
@@ -424,9 +338,9 @@ function showDivs(n) {
    <img class="mySlides" src="media/productos/logos/5.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>LOGOS</h2>
-   <h6>Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
+<aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">LOGOS</h2>
+   <h6 class="letra-popup">Diferentes logos creados en donde se resalta la identidad de la empresa, marca o proyecto solicitado. </h6>
   </aside>
 </div>
 
@@ -434,8 +348,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs(1)">❯</span>
     </div>
 
     <div class="w3-col s2">
@@ -484,9 +398,9 @@ function showDivs(n) {
    <img class="mySlides2" src="media/productos/retoques/11.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>RETOQUES FOTOGRÁFICOS</h2>
-   <h6>Edición, recorte, retoque, tratamiento de imágenes de material fotográfico e/o ilustraciones. Para destacar un producto o sección de la misma foto, o un detalle. </h6>
+<aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">RETOQUES FOTOGRÁFICOS</h2>
+   <h6 class="letra-popup">Edición, recorte, retoque, tratamiento de imágenes de material fotográfico e/o ilustraciones. Para destacar un producto o sección de la misma foto, o un detalle. </h6>
   </aside>
 </div>
 
@@ -494,8 +408,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption2"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs2(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black"  onclick="plusDivs2(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs2(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue"  onclick="plusDivs2(1)">❯</span>
     </div>
 
     <div class="w3-col s2">
@@ -542,9 +456,9 @@ function showDivs(n) {
    <img class="mySlides3" src="media/productos/web/15.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>CONTENIDO WEB</h2>
-   <h6>Material audiovisual y visual para sitios o anuncios promocionales en la web. Ajustado a sus formatos y detalles a resaltar. Carrousel, Banners, Relees, Videos, Ilustraciones, etc. </h6>
+<aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">CONTENIDO WEB</h2>
+   <h6 class="letra-popup">Material audiovisual y visual para sitios o anuncios promocionales en la web. Ajustado a sus formatos y detalles a resaltar. Carrousel, Banners, Relees, Videos, Ilustraciones, etc. </h6>
   </aside>
 </div>
 
@@ -552,8 +466,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption3"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs3(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs3(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs3(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs3(1)">❯</span>
     </div>
 
     <div class="w3-col s2">
@@ -596,9 +510,9 @@ function showDivs(n) {
    <img class="mySlides4" src="media/productos/branding/4.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>BRANDING</h2>
-   <h6>Manual de identidad, Cartelera de teatro, Menú gastrónomico, son algunos de los proyectos donde se resaltan la estrategia e identidad visual de la marca. </h6>
+<aside class="w3-container w3-w w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">BRANDING</h2>
+   <h6 class="letra-popup">Manual de identidad, Cartelera de teatro, Menú gastrónomico, son algunos de los proyectos donde se resaltan la estrategia e identidad visual de la marca. </h6>
   </aside>
 </div>
 
@@ -606,8 +520,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption4"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs4(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs4(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-w w3-win8-blue" onclick="plusDivs4(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-w w3-win8-blue" onclick="plusDivs4(1)">❯</span>
     </div>
 
     <div class="w3-col s3">
@@ -646,9 +560,9 @@ function showDivs(n) {
    <img class="mySlides5" src="media/productos/redes/6.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>SOCIAL MEDIA CONTENT</h2>
-   <h6>Contenido exclusivamente realizado para los diferentes canales de redes sociales. </h6>
+<aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">SOCIAL MEDIA CONTENT</h2>
+   <h6 class="letra-popup">Contenido exclusivamente realizado para los diferentes canales de redes sociales. </h6>
   </aside>
 </div>
 
@@ -656,8 +570,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption5"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs5(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs5(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs5(-1)">❮</span>
+     <span class="w3-display-right w3-btn  w3-win8-blue" onclick="plusDivs5(1)">❯</span>
     </div>
 
     <div class="w3-col s2">
@@ -701,9 +615,9 @@ function showDivs(n) {
    <img class="mySlides6" src="media/productos/art/5.jpg" style="width:90%">
 </div>
   <div class="w3-col s4">
-    <aside class="w3-container w3-black w3-right"> 
-     <h2>ART</h2>
-      <h6>Diferentes piezas de arte con contenido estético visual y un mensaje a transmitir. Composiciones, fotomontajes, piezas individuales, etc.  </h6>
+    <aside class="w3-container w3-win8-blue w3-right"> 
+     <h2 class="letra-popup">ART</h2>
+      <h6 class="letra-popup">Diferentes piezas de arte con contenido estético visual y un mensaje a transmitir. Composiciones, fotomontajes, piezas individuales, etc.  </h6>
     </aside>
   </div>
 
@@ -711,8 +625,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption6"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs6(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs6(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs6(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs6(1)">❯</span>
   </div>
 
     <div class="w3-col s2">
@@ -752,9 +666,9 @@ function showDivs(n) {
    <img class="mySlides7" src="media/productos/tarjetas/10.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>TARJETAS PERSONALIZADAS</h2>
-   <h6>Diseños de tarjetas personales personalizadas. </h6>
+<aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">TARJETAS PERSONALIZADAS</h2>
+   <h6 class="letra-popup">Diseños de tarjetas personales personalizadas. </h6>
   </aside>
 </div>
 
@@ -762,8 +676,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption7"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs7(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs7(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs7(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs7(1)">❯</span>
     </div>
 
     <div class="w3-col s4">
@@ -795,9 +709,9 @@ function showDivs(n) {
    <img class="mySlides8" src="media/productos/presentaciones/5.jpg" style="width:90%">
   </div>
   <div class="w3-col s4">
-    <aside class="w3-container w3-black w3-right"> 
-      <h2>PRESENTACIONES</h2>
-      <h6>Presentaciones de proyectos, documentos o ideas para empresas, marcas o emprendimientos.De manera concisa y sencilla con el objetivo de transmitirlas eficazmente.  </h6>
+    <aside class="w3-container w3-win8-blue w3-right"> 
+      <h2 class="letra-popup">PRESENTACIONES</h2>
+      <h6 class="letra-popup">Presentaciones de proyectos, documentos o ideas para empresas, marcas o emprendimientos.De manera concisa y sencilla con el objetivo de transmitirlas eficazmente.  </h6>
     </aside>
   </div>
 
@@ -805,8 +719,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption8"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs8(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs8(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs8(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs8(1)">❯</span>
     </div>
 
     <div class="w3-col s4">
@@ -837,9 +751,9 @@ function showDivs(n) {
    <img class="mySlides9" src="media/productos/publicidad/3.jpg" style="width:90%">
 </div>
 <div class="w3-col s4">
-<aside class="w3-container w3-black w3-right"> 
-   <h2>PUBLICIDAD</h2>
-   <h6>Afiches y cartelera impresa para la vía publica. También para interior uo exterior de negocio,para diferentes proyectos de empresas o marcas que requieren llegar a las personas de una manera visualmente directa.  </h6>
+  <aside class="w3-container w3-win8-blue w3-right"> 
+   <h2 class="letra-popup">PUBLICIDAD</h2>
+   <h6 class="letra-popup">Afiches y cartelera impresa para la vía publica. También para interior o exterior de negocio, para diferentes proyectos de empresas o marcas que requieren llegar a las personas de una manera visualmente directa.  </h6>
   </aside>
 </div>
 
@@ -847,8 +761,8 @@ function showDivs(n) {
 
     <div class="w3-display-container">
      <p id="caption9"></p>
-     <span class="w3-display-left w3-btn w3-black" onclick="plusDivs9(-1)">❮</span>
-     <span class="w3-display-right w3-btn w3-black" onclick="plusDivs9(1)">❯</span>
+     <span class="w3-display-left w3-btn w3-win8-blue" onclick="plusDivs9(-1)">❮</span>
+     <span class="w3-display-right w3-btn w3-win8-blue" onclick="plusDivs9(1)">❯</span>
     </div>
 
     <div class="w3-col s3">

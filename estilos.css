@@ -94,7 +94,7 @@ a i {
     font-family: 'Roboto Mono', monospace;
     font-style: normal;
     font-size: 100px;
-    line-height: 142px;
+    line-height: 102px;
     color: #006DFF;
     font-weight: 400;
     letter-spacing: 0em;
@@ -115,8 +115,8 @@ a i {
  }
 
 #imgprincipal  { 
-  width: 760px;
-  height: 762px;
+  width: 630px;
+  height: 662px;
 }
 
 .btn {
@@ -134,15 +134,19 @@ button a:hover {
     margin-top: 100px;
 }
 
+.container-size {
+  text-align: center;
+}
 
 .display-letra {
     font-family: 'Roboto Mono', monospace;
     font-style: normal;
     font-size: 50px;
-    line-height: 80px;
+    line-height: 70px;
     color: #006DFF;
     font-weight: 400;
     text-decoration: underline;
+
 }
 
 
@@ -343,6 +347,10 @@ h3.headline {
 }
 
 
+h6.letra-popup, h2.letra-popup {
+  font-family: Montserrat; 
+}
+
 
 
 @media (max-width: 768px){ /* para celular */ 
@@ -382,7 +390,9 @@ h3.headline {
 
 .mySlides {display:none}
 
-
+.w3-black {
+  color: #006DFF!important;
+}
 
 
 
@@ -407,7 +417,7 @@ h6.formulario {
     font-size: 25px;
     color: #006DFF;
     font-weight: bold;
-    line-height: 49px;
+    line-height: 35px;
 }
 
 
