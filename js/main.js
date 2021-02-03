@@ -1,12 +1,5 @@
 //menu 
-$(document).ready(function(){
-  $("a").click(function(){
-    $("#collapsibleNavbar").hide();
-  });
-  $("button").click(function(){
-    $("#collapsibleNavbar").show();
-  });
-});
+
 
 // portfolio 
 

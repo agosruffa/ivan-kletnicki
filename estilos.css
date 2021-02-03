@@ -10,7 +10,13 @@ html{
 body { 
 	margin-bottom:0;
   padding: 0px 0 0 0;
-  width: 100%;
+  width: 90%;
+}
+
+@media (max-width: 768px){ /* para celular */ 
+  body {
+    width: 100%;
+  }
 }
 
 
@@ -99,7 +105,6 @@ a i {
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
- 
     position: relative;
 }
 
@@ -115,8 +120,8 @@ a i {
  }
 
 #imgprincipal  { 
-  width: 630px;
-  height: 662px;
+  width: 662px;
+  height: 660px;
 }
 
 .btn {
@@ -199,6 +204,9 @@ button a:hover {
     font-weight: normal;
 }
 
+.headline-centro {
+    text-align: center;
+} 
 
 hr {
   margin-top: 1rem;
