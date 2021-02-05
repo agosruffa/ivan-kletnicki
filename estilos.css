@@ -28,7 +28,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 8%;
+  width: 10%;
   height:100%;
   background-color: white;
   position: fixed;
@@ -92,9 +92,8 @@ nav li a:hover{
 
 a i {
     color: #006DFF;
+    margin-left: 50px;
 }
-
-
 
 .titulo h1 {
     font-family: 'Roboto Mono', monospace;
@@ -140,7 +139,7 @@ button a:hover {
 }
 
 .container-size {
-  text-align: center;
+    text-align: center;
 }
 
 .display-letra {
@@ -151,7 +150,7 @@ button a:hover {
     color: #006DFF;
     font-weight: 400;
     text-decoration: underline;
-
+    margin-left: 200px;
 }
 
 
@@ -215,6 +214,9 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.hrbranding{ 
+  margin-top: 2.2rem;
+}
 
 .subtitulo {
     font-family: 'Roboto Mono', monospace;
