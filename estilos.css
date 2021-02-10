@@ -150,7 +150,7 @@ button a:hover {
     color: #006DFF;
     font-weight: 400;
     text-decoration: underline;
-    margin-left: 200px;
+    
 }
 
 
@@ -168,6 +168,7 @@ button a:hover {
 @media (min-width: 768px){ /* para pc */ 
 .container-size {
     padding-right: 200px!important;
+    margin-left: 200px;
     }
 }
 
